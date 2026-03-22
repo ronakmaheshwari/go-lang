@@ -64,7 +64,7 @@ func delete(index int, userTodo []todo) ([]todo, error) {
 
 func print(userTodo []todo) {
 	table := table.New(os.Stdout)
-	table.SetRowLines(false)
+	table.SetRowLines(true)
 	table.SetHeaders("#Id", "Title", "Completed", "Created At", "Completed At")
 	for i, x := range userTodo {
 		completedAt := ""
